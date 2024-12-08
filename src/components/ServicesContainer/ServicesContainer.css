@@ -1,0 +1,60 @@
+.container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem;
+    justify-content: center;
+    width: 100%; /* Ensure full width container */
+  }
+  
+  .package {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 100%; /* Make each package take up 100% width */
+    text-align: center;
+    margin-bottom: 2rem;
+    box-sizing: border-box; /* Ensure padding/margins don't affect width */
+  }
+  
+  .package.fade-in {
+    opacity: 1;
+  }
+  
+  .image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Ensure image takes up 100% width of the package */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    max-width: 100%; /* Ensure no overflow */
+  }
+  
+  .coupleh1 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+  
+  .include {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .couplepack {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+  
+  .Coupleprice {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  

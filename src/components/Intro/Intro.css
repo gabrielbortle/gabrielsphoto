@@ -1,0 +1,77 @@
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    color: blacK;
+
+  }
+  .intro-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    object-position: 50% 10%; /* Center horizontally, 10% down vertically */
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .intro-text {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .intro-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+.cta-link{
+    text-decoration: none;
+    color: white;
+}
+
+  .cta-button:hover {
+    background-color: white;
+  }
+    
+.cta-link:hover{
+  color: black;
+}
+  
+
+@media (max-width:768px) {
+    .intro-container {
+        flex-direction: column;
+        text-align: center;  
+        align-items: center;      
+      }
+        
+  .intro-text {
+    text-align: center;
+  }
+}

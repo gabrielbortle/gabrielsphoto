@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* Ensures padding and borders don't affect element size */
+}
+
+.home-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out; /* Seamless transition between images */
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .arrow.left {
+    left: 20px;
+  }
+  
+  .arrow.right {
+    right: 20px;
+  }
+  

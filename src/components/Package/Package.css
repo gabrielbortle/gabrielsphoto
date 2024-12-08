@@ -1,0 +1,50 @@
+.service-package {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .service-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 100px;
+  }
+  
+  .service-title {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+  
+  .service-includes {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .service-details {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+  
+  .service-price {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+
+
+@media (max-width:768px) {
+    .service-image {
+        width: 80%;
+        padding-top: 100px;
+      }
+      
+}
