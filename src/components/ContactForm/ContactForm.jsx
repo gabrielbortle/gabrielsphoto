@@ -28,7 +28,7 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://gabrielsphoto/.netlify/functions/send", // Replace with your actual Netlify function URL
+        "https://gabrielsphoto/.netlify/functions/backend/function/send", // Replace with your actual Netlify function URL
         {
           name: formData.name,
           email: formData.email,
