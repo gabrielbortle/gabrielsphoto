@@ -9,7 +9,7 @@ import Image5 from '../../assets/background5.jpg';  // Adjust the path as needed
 
 const HomeHero = () => {
   const images = [
-    Image1,  // Direct image path
+    Image1,
     Image5,
     Image3,
     Image4,
@@ -17,13 +17,24 @@ const HomeHero = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Change image every 5 seconds
+  // Preload images when component mounts
   useEffect(() => {
+    const preloadImages = () => {
+      images.forEach((image) => {
+        const img = new Image();
+        img.src = image;
+      });
+    };
+
+    preloadImages();
+
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // 5 seconds
+    }, 5000); // Change image every 5 seconds
 
-    return () => clearInterval(interval); // Clean up the interval on component unmount
+    return () => {
+      clearInterval(interval); // Clean up the interval on component unmount
+    };
   }, []);
 
   // Handle left and right arrow clicks
