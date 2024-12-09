@@ -24,9 +24,8 @@ dist-ssr
 *.sw?
 
 
-# Node.js dependencies
-node_modules/
-
+# Don't ignore node_modules in the backend folder
+!backend/node_modules/
 # Environment variables
 .env
 
