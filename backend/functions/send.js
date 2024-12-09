@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 
 exports.handler = async (event) => {
   const headers = {
-    "Access-Control-Allow-Origin": "https://gabrielshoto.com", // Replace with your actual frontend URL
+    "Access-Control-Allow-Origin": "*", // Allow all origins for testing
     "Access-Control-Allow-Methods": "OPTIONS, POST",
     "Access-Control-Allow-Headers": "Content-Type",
   };
