@@ -1,0 +1,69 @@
+/* General Footer Styles */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;  /* Changed to column direction */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    max-width: 300px;  /* Increased logo size */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  
+  .footer-link:hover {
+    color: #ccc;
+  }
+  
+  .footer-copyright {
+    font-size: 1rem;  /* Adjusted font size for copyright */
+    color: #ccc;
+    margin-top: 20px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .footer-links {
+      gap: 10px;
+    }
+  
+    .footer-logo {
+      max-width: 250px; /* Resize logo for smaller screens */
+    }
+  
+    .footer-link {
+      font-size: 1.8rem;  /* Adjust link font size for mobile */
+    }
+  
+    .footer-copyright {
+      font-size: 0.9rem;  /* Adjust copyright font size for mobile */
+    }
+  }
+  

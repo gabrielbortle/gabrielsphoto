@@ -33,7 +33,7 @@ const Intro = () => {
         <h1>Hi, I’m Gabriel</h1>
         <h2>A Photographer Capturing Teton Valley's Beauty</h2>
         <p>
-          Specializing in landscapes, portraits, and capturing life’s
+          Specializing in couples, graduations, and family portraits capturing
           unforgettable moments in the heart of Teton Valley.
         </p>
         <motion.button

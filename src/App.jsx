@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 
   import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Footer from './components/Footer/Footer';
 const App = () => {
 
 
@@ -29,6 +30,7 @@ const ScrollToTop = () => {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
