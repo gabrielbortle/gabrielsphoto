@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 
 exports.handler = async (event) => {
   const headers = {
-    "Access-Control-Allow-Origin": "https://gabrielsphoto.com", // Update for your domain
+    "Access-Control-Allow-Origin": "http://localhost:5173", // Replace with your Vite dev server URL
     "Access-Control-Allow-Methods": "OPTIONS, POST",
     "Access-Control-Allow-Headers": "Content-Type",
   };
