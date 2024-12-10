@@ -1,17 +1,14 @@
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import "./Package.css";
 
 const Package = ({ imageSrc, title, includes, price }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { threshold: 0.2 });
-
   return (
     <motion.div
-      ref={ref}
       className="service-package"
       initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 1 }}
     >
       <img src={imageSrc} className="service-image" alt="Package" />
