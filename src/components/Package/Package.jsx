@@ -8,8 +8,7 @@ const Package = ({ imageSrc, title, includes, price }) => {
       className="service-package"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      // Adjusting the viewport setting to reduce flickering
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 1 }}
     >
       <img src={imageSrc} className="service-image" alt="Package" />
