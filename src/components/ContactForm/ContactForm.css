@@ -65,24 +65,21 @@ select {
   font-size: 1rem;
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 /* Responsiveness */
 @media (max-width: 768px) {
   .yourinfo {
     padding: 15px;
+    max-width: 350px;
   }
 
   label {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   input,
   select,
   textarea {
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 8px;
   }
 
@@ -98,7 +95,7 @@ input[type="number"] {
   }
 
   label {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   input,
